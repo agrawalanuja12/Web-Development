@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Elementory selectors */
+        div {
+            background-color: red;
+            color: yellow;
+        }
+        /* Class Selectors..... */
+        .red{
+            background-color: aqua;
+            
+        }
+        /* ID Selectors........ */
+        #green{
+            background-color: green;
+        }
+        /* Child Selectors..... */
+        div > p {
+            color: aliceblue;
+            background-color: blueviolet;
+        }
+        /* Descendant Selectors */
+        div p {
+            color: aliceblue;
+            background-color: blueviolet;
+        }
+        /* Universal Selectors.. */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selectors...... */
+        a:visited{
+            color: rgb(56, 3, 56);
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>Im a first child selector</p>
+        <p>Im a second child selector</p>
+    </main>
+    <div class="one">
+        Im a div one....
+    </div>
+    <div class="red">
+        Im a Div with elementory selector
+        <article>
+        <p>Im a para inside elementory div and styling using child selectors </p>
+    </article>
+    </div>
+    <div>
+        Im another div with class selector
+    </div>
+    <div id="green">
+        Im also a div with Id selector
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+
+</body>
+</html>
